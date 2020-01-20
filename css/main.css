@@ -1,0 +1,48 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #fdfdfd;
+  }
+  
+  .game-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    position: relative;
+  }
+  
+  .item-container {
+    margin: 1px;
+  
+    /* background-color: black; */
+  }
+  
+  .item {
+    background-color: cyan;
+  
+    border-radius: 10px;
+
+    transform: scale(0.9);
+  
+    display: inline-flex;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .item-txt {
+      font-size: 24px;
+      color: black;
+  }
+
+  .circle {
+    border-radius: 38px;
+    transform: scale(0.1);
+  }
+  
