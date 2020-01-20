@@ -34,6 +34,7 @@ body {
     align-items: center;
     position: absolute;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
   }
   
   .item-txt {
@@ -43,6 +44,7 @@ body {
 
   .circle {
     border-radius: 38px;
-    transform: scale(0.1);
+    transform: scale(0.3);
+    
   }
   

@@ -9,10 +9,10 @@
     timer.start();
     document.addEventListener('keyup', (e) => {
         if(!twoDGame.logicalPause) {
-            if (e.code === "ArrowUp") twoDGame.move(UP);
-            else if (e.code === "ArrowDown") twoDGame.move(DOWN);
-            else if (e.code === "ArrowRight") twoDGame.move(RIGHT);
-            else if (e.code === "ArrowLeft") twoDGame.move(LEFT);
+            if (e.code === "ArrowUp") twoDGame.move(DOWN);
+            else if (e.code === "ArrowDown") twoDGame.move(UP);
+            else if (e.code === "ArrowRight") twoDGame.move(LEFT);
+            else if (e.code === "ArrowLeft") twoDGame.move(RIGHT);
         }
         document.getElementById("moves-counter").innerText = twoDGame.totalMoves;
     })

@@ -138,7 +138,7 @@ class Game {
                 this.itemNodeMatrix[r].push(newNode("item",  SIZE/nRowCol-2 + "px"));
             }
         }
-        this.itemNodeMatrix[this.nRowCol-1][this.nRowCol-1].style.backgroundColor = "#492540";
+        this.itemNodeMatrix[this.nRowCol-1][this.nRowCol-1].style.opacity = 0;
     }
 
     render(parentNode) {
