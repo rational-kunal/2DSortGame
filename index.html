@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +11,29 @@
 
     <title>twoD Sort</title>
 </head>
+
 <body>
-    
-    <div class="container" style="margin: 100px auto;">
-        
+
+    <div class="container">
+
         <div class="row">
-            <div class="one column control-container" >
+            <div class="one column control-container">
                 <button id="undo"> undo </button>
                 <button id="autosolve"> autosolve </button>
                 <button id="shuffle"> shuffle </button>
                 <button class="moves-counter" id="moves-counter">moves</button>
                 <button class="timer" id="timer">timer</button>
             </div>
-            <div class="eleven columns" style="display: flex; align-items: center; justify-content: center;">
+            <div class="ten columns" style="display: flex; align-items: center; justify-content: center;">
                 <div style="position:relative">
                     <div class="" id="full-container"></div>
                 </div>
+            </div>
+            <div class="one column control-container">
+                <button id="undo"> up </button>
+                <button id="undo"> down </button>
+                <button id="undo"> left </button>
+                <button id="undo"> right </button>
             </div>
         </div>
     </div>
@@ -34,7 +42,9 @@
     <script src="js/timer.js"></script>
     <script src="js/util.js"></script>
     <script src="js/viewutil.js"></script>
+    <script src="js/pathmanager.js"></script>
     <script src="js/game.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>

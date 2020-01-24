@@ -4,7 +4,7 @@ function newNode(classList, size) {
     node.classList = classList;
     node.style.width = size;
     node.style.height = size;
-    
+
     return node;
 }
 
@@ -15,29 +15,19 @@ function offsetOf(node) {
 function updateOffsetOf(node, top, left) {
     node.style.top = top + "px";
     node.style.left = left + "px";
-    // console.log(top, left, node.style.top);
 }
 
 function reposition(pNode, cNode) {
     updateOffsetOf(cNode, ...offsetOf(pNode));
 }
 
-function animateItemDiv(item, fromNode, toNode) {
-    // const [fromLeft, fromTop] = offsetOf(fromNode);
+function animateItemDiv(item, toNode) {
     const [toLeft, toTop] = offsetOf(toNode);
-  
-    // console.log(toLeft, toTop);
-  
-    // document.getElementById("app").removeChild(item);
+
     item.classList.add("circle");
     item.style.top = toTop + "px";
     item.style.left = toLeft + "px";
     setTimeout(() => {
-      item.classList.remove("circle");
-    }, 250);
-    // item.classList.add("circle");
-    // document.getElementById("app").appendChild(item);
-    // requestAnimationFrame(()=>{
-    //   item.classList.remove("circle");
-    // })
-  }
+        item.classList.remove("circle");
+    }, CIRCLE_ANIM_DURATION);
+}
