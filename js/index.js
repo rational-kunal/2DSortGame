@@ -1,4 +1,4 @@
-// window.onload = () => {
+window.onload = () => {
     
     const app = document.getElementById(fullContainer);
     const twoDGame = new Game(4);
@@ -34,4 +34,6 @@
         }   
     }
 
-// }
+    twoDGame.randomize(100);
+
+}
