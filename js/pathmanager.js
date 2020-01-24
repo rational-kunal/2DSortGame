@@ -8,7 +8,7 @@ class PathManager {
     }
 
     resetBlank() {
-        this.posBlank = [nRowCol - 1, nRowCol - 1];
+        this.posBlank = [this.nRowCol - 1, this.nRowCol - 1];
     }
 
     canMove(direction) {

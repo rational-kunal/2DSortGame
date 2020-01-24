@@ -34,6 +34,23 @@ window.onload = () => {
         }   
     }
 
+    document.getElementById("up").onclick = ()=>{
+        twoDGame.move(DOWN); 
+        document.getElementById("moves-counter").innerText = twoDGame.totalMoves;
+    }
+    document.getElementById("down").onclick = ()=>{
+        twoDGame.move(UP); 
+        document.getElementById("moves-counter").innerText = twoDGame.totalMoves; 
+    }
+    document.getElementById("left").onclick = ()=>{
+        twoDGame.move(RIGHT); 
+        document.getElementById("moves-counter").innerText = twoDGame.totalMoves;
+    }
+    document.getElementById("right").onclick = ()=>{
+        twoDGame.move(LEFT); 
+        document.getElementById("moves-counter").innerText = twoDGame.totalMoves;
+    }
+
     twoDGame.randomize(100);
 
 }

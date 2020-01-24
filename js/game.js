@@ -96,6 +96,7 @@ class Game {
         }, delay);
 
         this.pathManager.resetBlank();
+        console.log(this.pathManager.posBlank);
     }
 
     move(direction) {
